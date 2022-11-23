@@ -1,8 +1,9 @@
 # Librerias/frameworks usados en el proyecto:
 
     Tailwind 3.2.4
+    React 18.2.0
 
-    par
+## Para levantar el proyecto (nodejs y npm es necesario):
 ### `npm start`
 
 Runs the app in the development mode.\
