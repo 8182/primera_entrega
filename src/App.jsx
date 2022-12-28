@@ -1,19 +1,17 @@
-import logo from './logo.svg';
-import NavBar from './components/NavBar'
-import CartWidget from './components/CartWidget'
-import ItemListContainer from './components/ItemListContainer'
-
-
+import NavBar from './components/NavBar/NavBar'
+import CartWidget from './components/NavBar/CartWidget'
+import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import './App.css';
 
 function App() {
   return (
     <>
       <div className="App">
-        <NavBar/>
-        <CartWidget/>
-      <ItemListContainer greeting='Saludos usuario'/>
-{/* en este orden deberia ir, no es un argumento el cart widget, es un elemento que va despues del navbar y se acopla */}
+        <NavBar>
+          <CartWidget/>
+        </NavBar>
+        <ItemListContainer greeting='Saludos usuario'/>
+{/* en este orden deebria ir, no es un argumento el cart widget, es un elemento que va despues del navbar y se acopla */}
 
       </div>
     </>
